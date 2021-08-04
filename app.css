@@ -1,0 +1,205 @@
+* {
+	padding: 0; 
+	margin: 0
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	overflow: hidden;
+	background: #005188;
+}
+
+#app .columns {
+	margin: 0;
+    padding: 0;
+}
+
+.column {
+	padding: 0;
+    margin: 0;
+}
+
+#pixi {
+	position: relative;
+}
+
+.header {
+	padding: 1rem;
+	padding-bottom: 0;
+}
+
+.title, .subtitle {
+	color: #ffffff;
+}
+
+hr {
+	background: #237fbd;
+	margin-bottom: 0;
+}
+
+.gui {
+	position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    padding: 1rem 2rem;
+    flex-direction: row-reverse;
+}
+
+.gui-left {
+	right: auto;
+	left: 0;
+}
+
+.gui-item {
+	display: flex;
+	align-items: center;
+	margin: 0 0.5rem;
+}
+
+.gui-item svg {
+	width: 42px;
+	height: 42px;
+	fill: #ffffff;
+    padding: 0.5rem;
+}
+
+.upgrades {
+	display: flex;
+    padding-top: 1.75rem;
+    justify-content: space-evenly;
+}
+
+.upgrades button {
+	display: flex;
+    align-items: center;
+    border: 2px solid #ddd;
+    background: transparent;
+	color: #fff;
+	cursor: pointer;
+	background: #0076c7;
+}
+
+.upgrades button:hover {
+	border-color: #fff;
+	background: #0099ff;
+}
+
+.upgrades button .price {
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.upgrades button .price strong {
+	color: #fff;
+    font-size: 1.25rem;
+    margin-left: 0.5rem;
+    font-weight: normal;
+}
+
+.upgrades button .effect {
+	display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-left: 2px dashed #fff;
+}
+
+.upgrades button.max .effect {
+	border: 0;
+}
+
+.upgrades button.max,
+.upgrades button.max:hover {
+	border-color: #ddd;
+	background: #0076c7;
+	opacity: 0.75;
+	cursor: not-allowed;
+}
+
+.upgrades button .effect strong {
+	font-size: 1.25rem;
+	color: #fff;
+}
+
+.upgrades button .effect span {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+svg {
+	fill: #fff;
+}
+
+#background-mountain-1 {
+	width: 100%;
+    height: 150%;
+    fill: #fff;
+    opacity: 0.02;
+    position: absolute;
+    left: 50%;
+}
+
+.gui-item strong {
+	color: #fff;
+}
+
+.achievements {
+	display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.achievements .achievement {
+	display: flex;
+    align-items: center;
+    background: #136dab;
+	padding: 0.5rem 0 0.75rem 0;
+	opacity: 0;
+}
+
+.achievements .achievement .goal {
+	width: 160px;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.achievements .achievement .details {
+	display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.achievements .achievement .details > strong {
+	color: #fff;
+    font-size: 1.4rem;
+}
+
+.header-actions {
+	position: fixed;
+	padding: 1rem;
+	top: 0;
+	right: 0;
+}
+
+.header-actions a {
+	padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+#martin-tale {
+	position: fixed;
+	top: 50px;
+	right: 0;
+	color: #fff;
+    padding: 1.1rem;
+}
+
+#martin-tale:hover {
+	color: #fff;
+	text-decoration: underline;
+}
